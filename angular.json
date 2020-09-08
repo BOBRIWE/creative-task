@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "creative-task"
+    }
+  },
+  "defaultProject": "creative-task",
+  "cli": {
+    "analytics": false
+  }
 }
