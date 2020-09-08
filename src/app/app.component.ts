@@ -13,6 +13,10 @@ export class AppComponent implements OnInit {
   constructor(private flatsBackend: FlatsBackendService) {}
 
   async ngOnInit(): Promise<void> {
-    this.flatCards = await this.flatsBackend.fetchFlats();
+    try {
+      this.flatCards = await this.flatsBackend.fetchFlats();
+    } catch (e) {
+      this.flatCards = [];
+    }
   }
 }
