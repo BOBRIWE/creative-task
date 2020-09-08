@@ -1,6 +1,10 @@
 :host {
   border: 1px solid aqua;
   padding: 20px;
+
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 
 header {
@@ -11,4 +15,21 @@ main {
   display: grid;
   grid-auto-flow: row;
   row-gap: 5px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+.favourite {
+  background: transparent;
+  font-size: 30px;
+
+  &--active {
+    color: aqua;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }

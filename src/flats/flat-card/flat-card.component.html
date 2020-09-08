@@ -7,3 +7,7 @@
   <span>Адрес: {{flatCard.attributes.address | address}}</span>
   <span>Аген: {{flatCard.relationships | agent}}</span>
 </main>
+<footer>
+  <span (click)="favouriteClicked()" *ngIf="flatCardService.isFavourite" class="favourite favourite--active">★</span>
+  <span (click)="favouriteClicked()" *ngIf="!flatCardService.isFavourite" class="favourite">☆</span>
+</footer>
