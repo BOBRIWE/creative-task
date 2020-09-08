@@ -1,1 +1,9 @@
-<p>flat-card works!</p>
+<header>
+  <span class="title">{{flatCard.attributes.title}}</span>
+</header>
+<main>
+  <span>Количество комнат: {{flatCard.attributes.rooms}}</span>
+  <span>Площадь: {{flatCard.attributes.area | area:flatCard.attributes.unit}}</span>
+  <span>Адрес: {{flatCard.attributes.address | address}}</span>
+  <span>Аген: {{flatCard.relationships | agent}}</span>
+</main>
