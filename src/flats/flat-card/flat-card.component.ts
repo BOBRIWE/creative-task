@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IFlatCard } from './IFlatCard';
+import { IFlatCard } from '../../backend/IFlatCard';
 
 @Component({
   selector: 'app-flat-card',

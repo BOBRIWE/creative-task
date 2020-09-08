@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FlatsModule } from '../flats/flats.module';
+import { BackendModule } from '../backend/backend.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { FlatsModule } from '../flats/flats.module';
   ],
   imports: [
     BrowserModule,
-    FlatsModule
+    FlatsModule,
+    BackendModule
   ],
   providers: [],
   bootstrap: [AppComponent]
